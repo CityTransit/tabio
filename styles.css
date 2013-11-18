@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+}
+
+
+body{
+    font-size:21px;
+    background-color: #D95B43;
+    color: #53777A;
+}
+
+#wrap{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.container{
+    max-width: 330px;
+    padding: 15px;
+    //margin: 0px auto;
+    line-height: 3;
+    height: 100%;
+}
+
+.progress-bar{
+    background-color: #53777A;
+}
+
+.card{
+    padding: 10px 0px;
+    text-align:center;
+    background-color: #ECD078;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:360px;
+}
+
+.card .title{
+    color: #53777A;
+    height: 55px; 
+}
+
+.card h3{
+    color: #542437;
+}
+
+#play button{
+    //margin-top:15px;
+    width: 49%;
+}
+
+#countdown{
+    font-size: 100px;
+}
+
+#setup input{
+    margin-left: auto;
+    margin-right: auto;
+    width:139px;
+}
+
+footer{
+    height:50px;
+    width: 33%;
+    bottom: 0;
+    //position: absolute;
+    margin: 0 auto;
+}
+
+#play footer{
+    width: 100%;
+}
+
+h1{
+    font-size:50px;
+    color: #ECD078;
+}
+
+.btn-failure{
+    background-color: #D95B43;
+    background:  #D95B43;
+}
+
+.title{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+hr{
+    margin: 0px 20px;
+    border-top-color: #000000;
+}
+
+#donehistory{
+    margin:10px auto;
+    width: 50%;
+}

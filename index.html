@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles.css" rel="stylesheet" media="screen">
+<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Setup Page -->
+    <span id="setup">
+      <div id="wrap">
+        <div class="container text-center">
+          <h1> Tabio! </h1>
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input id="pointsCheck" type="radio" name="options"> Points
+            </label>
+            <label class="btn btn-primary">
+              <input id="roundsCheck" type="radio" name="options"> Rounds
+            </label>
+          </div>
+          <input id="condition" type="number" class="form-control 
+                                                     text-center" value="100">
+          <!-- Disclaimer -->
+          <br><h5 style="color:#ECD078"> 
+            <p>Timing and cards do not reflect finished product </p>
+          <br><p> Pre-Alpha v0.06 Trevelyan</p></h5>
+          <!-- /Disclaimer -->
+        </div>
+      </div>
+      <footer class="text-center">
+        <button type="button" id="startbtn" class="btn btn-primary
+                                                   btn-lg btn-block
+                                                   text-center">Start</button>
+      </footer>
+    </span>
+
+    <!-- Ready Page -->
+    <span id="ready">
+      <div id="wrap">
+        <div class="container text-center">
+          <h1>Team 1</h1>
+          <br>
+          <h3>Round 2</h3>
+          <div class="progress">
+            <div id="0" class="progress-bar progress-bar-success" 
+                 role="progressbar" style="width: 0%"></div>
+          </div>
+          <div class="progress">
+            <div id="1" class="progress-bar progress-bar-success" 
+                 role="progressbar" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <button type="button" id="rdybtn" class="btn btn-primary btn-lg
+                                                 btn-block text-center">Ready</button>
+      </footer>
+    </span>
+
+    <!-- Countdown -->
+    <div id="countdown" class="container text-center"> </div>
+
+    <!-- Play Page -->
+    <span id="play">
+      <div id="wrap">
+        <div class="container">
+          <div class="progress progress-striped">
+            <div class="progress-bar"  role="progressbar" style="width:300px">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="title" data-bind="value: $title">Card Title</h1>
+            <hr>
+            <span data-bind="foreach: banned">
+              <h3 class="ban1" data-bind="text: 0">Ban Word 1</h3>
+              <h3 class="ban2">Ban Word 2</h3>
+              <h3 class="ban3">Ban Word 3</h3>
+              <h3 class="ban4">Ban Word 4</h3>
+              <h3 class="ban5">Ban Word 5</h3>
+            </span>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <button type="button" id="skipbtn" class="btn btn-warning 
+                                                    btn-lg text-center">Skip</button>
+          <button type="button" id="nextbtn" class="btn btn-primary 
+                                                    btn-lg text-center">Next</button>
+      </footer>
+    </span>
+
+    <!-- History Page -->
+    <span id="history">
+      <div id="wrap">
+        <div id="historyList" class="container text-center">
+          <h1>Review</h1>
+        </div>
+      </div>
+      <button type="button" id="donehistory" class="btn btn-primary btn-lg 
+                                                    btn-block text-center">Done</button>
+    </span>
+
+   <!-- Game Over -->
+   <span id="gameover">
+     <div id="wrap">
+       <div class="container text-center"></div>
+     </div>
+   </span>
+
+    <!-- Load scripts -->
+    <script language="JavaScript" src="jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script language="JavaScript" src="bootstrap.min.js"     type="text/javascript"></script>
+    <script language="JavaScript" src="knockout-3.0.0.js"    type="text/javascript"></script>
+    <script language="JavaScript" src="taboo.js"             type="text/javascript"></script>
+  </body>
+</html>
